@@ -1404,10 +1404,10 @@ if [ -n "\${MANPATH+x}" ]; then
     if [ -n "\$MANPATH" ]; then
         MANPATH="\${_KERL_MANPATH_REMOVABLE}:\$MANPATH"
     else
-        MANPATH="\${_KERL_MANPATH_REMOVABLE}"
+        MANPATH="\${_KERL_MANPATH_REMOVABLE}:"
     fi
 else
-    MANPATH="\${_KERL_MANPATH_REMOVABLE}"
+    MANPATH="\${_KERL_MANPATH_REMOVABLE}:"
     add_cleanup "
         if [ -z \"\\\$MANPATH\" ]; then
             unset MANPATH
